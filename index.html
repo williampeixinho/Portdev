@@ -11,10 +11,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         
-        * {
-          margin: 0;
-          padding: 0;
-          }
+        html {
+          overflow-x: hidden;
+        }
 
         body {
             font-family: "Silkscreen", sans-serif;
@@ -22,10 +21,11 @@
             font-style: normal;
             background-image: url(./WIILLIAM\ PEIXINHO\ \(8\).png);
             overflow-x: hidden;
+            max-width: 100%;
         }
 
         .container {
-            width: 100%;
+            max-width: 100%;
         }
         .cabecalho {
             background-color: #000000d5;
@@ -33,7 +33,7 @@
             padding: 20px;
             border-radius: 0px;
             margin: 0 auto;
-            width: 98%;
+            width: 100%;
             position: fixed;
             z-index: 1;
             top: 0px;
@@ -207,21 +207,9 @@
   }
 }
 
-.cabecalho {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 1.5s, transform 1.5s;
-}
-
-.cabecalho.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 #skills {
   justify-content: center;
   align-items: center;
-  padding: 40px;
  background-color: rgba(0, 0, 0, 0.158);
   text-align: center;
   filter: brightness(1);
