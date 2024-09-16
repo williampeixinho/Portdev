@@ -231,13 +231,13 @@
 
 
 #hud {
-  max-width: 500px;
+  max-width: 100%;
   margin-bottom: 35px;
 }
 
 
 #char {
-  max-width: 900px;
+  max-width: 100%;
 }
 
 #nome-char {
@@ -566,13 +566,15 @@ label {
                     </div>
                   </div>
                   <h2 class="t-projetos" id="skill">#####Skills#####</h2>
-                  <div id="skills">
+                  <div id="skills" class="row flex-row"  >
                     <h2 id="nome-char">William Peixinho 
                       "juninho DEV"</h2> 
+                      <div class="col-lg-6">
                   <img src="./imagens/WIILLIAM PEIXINHO (full body).png" id="char" alt="" data-aos="fade-left">
-                  
+                      </div>
+                    <div class="col-lg-6">
                   <img src="./hud.png" id="hud" alt="" data-aos="fade-right">
-                </div>
+                      </div>
                 <h2 class="t-projetos" id="sobre">#####Sobre#####</h2>
                 <div class="container sobre" data-aos="fade-left">
                   <div class="row flex-row">
@@ -605,22 +607,19 @@ Estou entusiasmado com as possibilidades que o campo da tecnologia oferece e est
                   </div>
 
                   <h2 class="t-projetos" id="contato">#####Contato#####</h2>
-                  <form action="https://formsubmit.co/pexxaao@gmail.com" method="POST">
-                    <div class="form-group">
+                  <div class="form-group">
+                    <form action="https://formsubmit.co/peixe2755@gmail.com" method="POST">
                       <label for="nome">Nome:</label>
-                      <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-                    </div>
-                    <div class="form-group">
+                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome">
                       <label for="email">E-mail:</label>
-                      <input type="email" class="form-control" id="email" placeholder="seuemail@example.com">
-                    </div>
-                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@example.com">
                       <label for="mensagem">Mensagem:</label>
-                      <textarea class="form-control" id="mensagem" placeholder="Sua mensagem" style="resize: none"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                  </form>
- </div>
+                      <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Sua mensagem" style="resize: none"></textarea>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                      <input type="hidden" name="_subject" value="msg sobre portifolio!">
+                      <input type="hidden" name="_next" value="https://portdev.vercel.app/">
+                    </form>
+                  </div>
 
 
 </body>
