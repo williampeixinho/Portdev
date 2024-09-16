@@ -11,32 +11,32 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         
-        html {
+        * {
+          margin: 0;
+          padding: 0;
           overflow-x: hidden;
-        }
+          }
 
         body {
             font-family: "Silkscreen", sans-serif;
             font-weight: 400;
             font-style: normal;
             background-image: url(./WIILLIAM\ PEIXINHO\ \(8\).png);
-            overflow-x: hidden;
-            max-width: 100%;
         }
 
         .container {
-            max-width: 100%;
+            width: 100%;
         }
         .cabecalho {
             background-color: #000000d5;
             color: white;
             padding: 20px;
-            border-radius: 0px;
             margin: 0 auto;
             width: 100%;
             position: fixed;
             z-index: 1;
             top: 0px;
+            padding: 1em;
         }
 
         .carousel-inner {
@@ -89,7 +89,7 @@
             margin: 0 auto; 
             filter: brightness(0.7);
            
-            border-radius: 0px;
+            border-radius: 60px;
             }
 
             .imagem-carrosel-2 {
@@ -97,7 +97,7 @@
             height: 800px; 
             object-fit: cover; 
             display: block; 
-            border-radius: 0px;
+            border-radius: 60px;
             margin: 0 auto;
             cursor: pointer;
             filter: brightness(0.9);
@@ -114,7 +114,7 @@
             height: 800px; 
             object-fit: cover; 
             display: block; 
-            border-radius: 0px;
+            border-radius: 60px;
             margin: 0 auto;
             filter: brightness(0.5);
             } 
@@ -205,6 +205,17 @@
   100% {
     transform: translate(0px, 0px);
   }
+}
+
+.cabecalho {
+  opacity: 0%;
+  transform: translateY(-20px);
+  transition: opacity 1.5s, transform 1.5s;
+}
+
+.cabecalho.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #skills {
@@ -318,9 +329,18 @@ label {
       }
 
 }
+
+@media (max-width: 1199px) {
+
+#texto {
+  font-size: 13px;
+}
+
+}
+
 @media only screen and (max-width: 768px) {
     #hud {
-    max-width: 350px;
+    max-width: 400px;
   
 }
     #texto {
@@ -359,24 +379,24 @@ label {
             <nav class="collapse navbar-collapse justify-content-end" id="menu">
                 <ul class="nav navbar-nav nav nav-pills">
                     <li class="nav-item mx-2 font-size-lg ">
-                        <a class="nav-link text-white" href="#home">Inicio</a>
+                        <a class="nav-link text-white" href="#">Inicio</a>
                     </li>
                     <li class="nav-item mx-2 font-size-lg">
-                        <a class="nav-link text-white" href="#projetos">Projetos</a>
+                        <a class="nav-link text-white" href="#">Projetos</a>
                     </li>
                     <li class="nav-item mx-2 font-size-lg">
-                        <a class="nav-link text-white" href="#skill">Skills</a>
+                        <a class="nav-link text-white" href="#">Skills</a>
                     </li>
                     <li class="nav-item mx-2 ">
-                        <a class="nav-link text-white" href="#sobre">Sobre</a>
+                        <a class="nav-link text-white" href="#">Sobre</a>
                     </li>
                     <li class="nav-item mx-2 ">
-                      <a class="nav-link text-white" href="#contato">Contato</a>
+                      <a class="nav-link text-white" href="#">Contato</a>
                   </li>
                 </ul>
     </div>
     </header>
-    <div class="container" id="home">
+    <div class="container">
         <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
             <div class="carousel-inner">
                 <div data-bs-interval="3500" class="carousel-item active">
@@ -410,7 +430,7 @@ label {
                 <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
             </div>
         </div>
-                <h2 class="t-projetos" id="projetos">#####Projetos#####</h2>
+                <h2 class="t-projetos">#####Projetos#####</h2>
                 <div class="container projetos">
                     <div class="row flex-row">
                       <div class="col-lg-4 col-md-6 col-xs-12 mt-4"  data-aos="fade-up">
@@ -437,12 +457,12 @@ label {
                           </header>
                           <img src="./imagens/_0926e5ea-4cd6-4f7d-8e23-496e1eb291ad.jpeg" alt="">
                           <div class="card-body">
-                            <h4 class="card-title">Python</h4>
-                            <p class="card-text">Em breve haverá um projeto</p>
+                            <h4 class="card-title">Habilidade</h4>
+                            <p class="card-text">Em breve haverá um projeto </p>
                             <button id="botao-sacudir" class="button-2">Bloqueado</button>
                           </div>
                           <footer class="card-footer">
-                            Postado em <time datetime="">15/09/24 as 19:00</time>
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
                           </footer>
                         </article>
                       </div>
@@ -455,11 +475,11 @@ label {
                           <img src="./imagens/cerebro.jpeg" alt="">
                           <div class="card-body">
                             <h4 class="card-title">Jogo da memória</h4>
-                            <p class="card-text">Estimule seu cérebro </p>
+                            <p class="card-text">Conheça um pouco do meu projeto</p>
                             <button type="button" class="button" onclick="window.location.href='https://memory-khaki-five.vercel.app/'">Entrar</button>
                           </div>
                           <footer class="card-footer">
-                            Postado em <time datetime="">02/09/24 as 19:00</time>
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
                           </footer>
                           
                         </article>
@@ -477,7 +497,7 @@ label {
                             <button type="button" class="button" onclick="window.location.href='https://peixe-projeto-calculadora-medias-7kycmxxp7.vercel.app/'">Entrar</button>
                           </div>
                           <footer class="card-footer">
-                            Postado em <time datetime="">01/09/24 as 19:00</time>
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
                           </footer>
                         </article>
                       </div>
@@ -494,7 +514,7 @@ label {
                             <button type="button" class="button" onclick="window.location.href='https://lista-de-tarefa-jquery.vercel.app/'">Entrar</button>
                           </div>
                           <footer class="card-footer">
-                            Postado em <time datetime="">25/08/24 as 19:00</time>
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
                           </footer>
                         </article>
                       </div>
@@ -511,14 +531,14 @@ label {
                             <button type="button" class="button" onclick="window.location.href='https://agenda-theta-plum.vercel.app/">Entrar</button>
                           </div>
                           <footer class="card-footer">
-                            Postado em <time datetime="">09/08/24 as 19:00</time>
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
                           </footer>
                         </article>
                       </div>
         
                     </div>
                   </div>
-                  <h2 class="t-projetos" id="skill">#####Skills#####</h2>
+                  <h2 class="t-projetos">#####Skills#####</h2>
                   <div id="skills">
                     <h2 id="nome-char">William Peixinho 
                       "juninho DEV"</h2> 
@@ -526,13 +546,13 @@ label {
                   
                   <img src="./imagens/hud.png" id="hud" alt="" data-aos="fade-right">
                 </div>
-                <h2 class="t-projetos" id="sobre">#####Sobre#####</h2>
+                <h2 class="t-projetos">#####Sobre#####</h2>
                 <div class="container sobre" data-aos="fade-left">
                   <div class="row flex-row">
-                    <div class=" col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-12">
                       <img id="eu" src="./imagens/fusca.jpg" alt="">
                     </div>
-                    <div class=" col-lg-6 col-md-12 texto" id="texto">
+                    <div class="col-lg-6 col-md-12 texto" id="texto">
                       Olá! Sou William Peixinho, um apaixonado por tecnologia e criatividade, atualmente em transição da área financeira para o mundo da programação. Estou concluindo o curso de Full Stack Python na EBAC, com foco atual no desenvolvimento front-end, e tenho um sólido conhecimento em HTML, CSS, JavaScript, jQuery e Bootstrap, além de experiência com GitHub.
 
 Minha trajetória começou na fotografia, onde desenvolvi uma sensibilidade estética e uma abordagem detalhista que agora aplico no design e desenvolvimento web. Essa experiência como fotógrafo me proporcionou uma visão única sobre a importância do design visual e da usabilidade, que são fundamentais para criar experiências de usuário envolventes e funcionais.
@@ -557,7 +577,7 @@ Estou entusiasmado com as possibilidades que o campo da tecnologia oferece e est
                     </a>
                   </div>
 
-                  <h2 class="t-projetos" id="contato">#####Contato#####</h2>
+                  <h2 class="t-projetos">#####Contato#####</h2>
                   <form>
                     <div class="form-group">
                       <label for="nome">Nome:</label>
