@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>William Peixinho | Front End</title>
+    <link rel="stylesheet" href="./Lib (codes)/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        
+        * {
+          margin: 0;
+          padding: 0;
+          }
+
+        body {
+            font-family: "Silkscreen", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-image: url(./WIILLIAM\ PEIXINHO\ \(8\).png);
+        }
+
+        .container {
+            width: 100%;
+        }
+        .cabecalho {
+            background-color: #000000f5;
+            color: white;
+            padding: 20px;
+            border-radius: 80px;
+            margin: 0 auto;
+            width: 98%; 
+        }
+
+        .carousel-inner {
+            margin-top: 30px;
+        }
+
+       
+        .navbar-toggler-icon {
+          background-image: url(./bars-solid\ \(1\).svg);
+          color: white;
+        }
+        
+        
+        .nav-item {
+            font-size: 20px;
+        }
+        
+
+        h1 {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-left: 80px;
+        }
+
+        a {
+            padding: 20px;
+        }
+
+        a:hover {
+            background-color:#2e2e2e;
+            transition: transform 0.5s;
+            color: black;
+        }
+
+        #titulo-img {
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            background-color: black
+            ;
+        }
+
+        .imagem-carrosel {
+            width: 1300px; 
+            height: 800px; 
+            object-fit: cover; 
+            display: block; 
+            margin: 0 auto; 
+            filter: brightness(0.7);
+           
+            border-radius: 60px;
+            }
+
+            .imagem-carrosel-2 {
+            width: 1300px; 
+            height: 800px; 
+            object-fit: cover; 
+            display: block; 
+            border-radius: 60px;
+            margin: 0 auto;
+            cursor: pointer;
+            filter: brightness(0.9);
+            }
+
+       
+            #titulo-img {
+                color: rgb(255, 255, 255);
+                
+            }
+
+            .imagem-carrosel-3{
+                width: 1300px; 
+            height: 800px; 
+            object-fit: cover; 
+            display: block; 
+            border-radius: 60px;
+            margin: 0 auto;
+            filter: brightness(0.5);
+            } 
+    .container-projetos {
+        border-radius: 960px;
+        margin-top: 30px;
+        width: 300%;
+    }
+
+    #imagem-projeto {
+        max-width: 100px;
+    }
+
+    .t-projetos {
+        margin-top: 40px;
+        background-color: #2e2e2ed2;
+        color:white;
+        border-radius: 5px;
+        max-width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .projetos {
+        margin-top: 40px;
+    }
+         button {
+                    margin-top: 10px;
+                    background-color: rgb(255, 174, 0);
+                    border-radius: 10px;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 15px;
+                    padding: 0.8rem;
+          }
+.button-2 {
+    background-color: rgb(235, 21, 21);
+    transition: transform 0.5s;
+}
+
+
+
+.sacudir2 {
+    transition: transform 0.5s; /* adiciona uma transição suave */
+  }
+
+  .sacudir2.sacudindo {
+    transform: shake(1px, 1px, 10); /* sacuda o card */
+    transition: transform 0.5s; /* mantém a transição suave */
+  }
+
+  .shake {
+  animation: shake 0.5s;
+  animation-iteration-count: 3;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px);
+  }
+  10% {
+    transform: translate(-1px, -2px);
+  }
+  20% {
+    transform: translate(-3px, 0px);
+  }
+  30% {
+    transform: translate(3px, 2px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(-1px, 2px);
+  }
+  60% {
+    transform: translate(-3px, 1px);
+  }
+  70% {
+    transform: translate(3px, -1px);
+  }
+  80% {
+    transform: translate(-1px, 1px);
+  }
+  90% {
+    transform: translate(1px, -2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.cabecalho {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1.5s, transform 1.5s;
+}
+
+.cabecalho.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#skills {
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+ background-color: rgba(0, 0, 0, 0.158);
+  text-align: center;
+  filter: brightness(1);
+  margin-bottom: -30px;
+  
+  }
+
+
+#hud {
+  max-width: 450px;
+  margin-bottom: 35px;
+}
+
+
+#char {
+  max-width: 900px;
+}
+
+#nome-char {
+  text-align: center;
+  margin-bottom: -30px;
+  font-size: 40px;
+  color: rgb(17, 16, 16);
+  border-radius: 0px;
+  max-width:100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#eu {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sobre {
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.texto {
+  margin-top: 0px;
+  max-width: 100%;
+  max-height: 80%;
+}
+
+#icon {
+  font-size: 30px;
+  padding: 10px;
+   }
+
+#icon a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.btn-primary {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #23527c;
+}
+@media (max-width: 1399px)  {
+      h1 {
+        font-size: 15px;
+      }
+
+     ul li a {
+        font-size: 15px;
+      }
+      .imagem-carrosel{
+        max-width: 90%;
+      }
+
+      .imagem-carrosel-2{
+        max-width: 90%;
+      }
+
+      .imagem-carrosel-3{
+        max-width: 90%;
+      }
+
+}
+@media only screen and (max-width: 768px) {
+    #hud {
+    max-width: 400px;
+  
+}
+    #texto {
+      font-size: 15px;
+      margin-top: 20px;
+    }
+
+    .imagem-carrosel{
+        max-width: 90%
+      }
+
+      .imagem-carrosel-2{
+        max-width: 90%;
+      }
+
+      .imagem-carrosel-3{
+        max-width: 90%;
+      }
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+    <div class="container ">
+        
+        <div class="navbar navbar-expand-lg">
+                <div>
+                <h1>W I L L I A M P E I X I N H O <br> H T M l : 5 | C S S | J S </h1>
+                
+                </div>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav nav-pills">
+                    <li class="nav-item mx-2 font-size-lg ">
+                        <a class="nav-link text-white" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-2 font-size-lg">
+                        <a class="nav-link text-white" href="#">Projetos</a>
+                    </li>
+                    <li class="nav-item mx-2 font-size-lg">
+                        <a class="nav-link text-white" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                        <a class="nav-link text-white" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                      <a class="nav-link text-white" href="#">Contato</a>
+                  </li>
+                </ul>
+    </div>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+            <div class="carousel-inner">
+                <div data-bs-interval="3500" class="carousel-item active">
+                    <img class="imagem-carrosel-3" src="./imagens/tela inicial.jpeg" alt="">
+                    <div class="carousel-caption">
+                        <h2 id="titulo-img">Seja Bem-vindo a minha Landing page </h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/_810de269-5808-4b4b-8d98-e0b776a82dc0.jpeg" class="imagem-carrosel-2" alt="Imagem" onclick="window.location.href='https://github.com/williampeixinho'">
+                    <div class="carousel-caption">
+                        <h2 id="titulo-img">Conheça meus Projetos </h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="imagem-carrosel" src="./imagens/_226b6309-bd8c-450e-8c0f-8018eabe909d.jpeg" alt="">
+                    <div class="carousel-caption">
+                        <h2 id="titulo-img">Projetos com MicroComputadores Open source <br>  (em breve) </h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+                <h2 class="t-projetos">#####Projetos#####</h2>
+                <div class="container projetos">
+                    <div class="row flex-row">
+                      <div class="col-lg-4 col-md-6 col-xs-12 mt-4"  data-aos="fade-up">
+                        <article class="card text-bg-dark">
+                          <header class="card-header">
+                            Desenvolvimento Web
+                          </header>
+                          <img src="./imagens/_f09f65d4-13b4-4873-8b71-cab3c52200ed.jpeg" alt="">
+                          <div class="card-body" >
+                            <h4 class="card-title">W.Peixinho Store</h4>
+                            <p class="card-text">Conheça um pouco do meu projeto</p>
+                            <button type="button" class="button" onclick="window.location.href='https://william-peixinho-store-3te16oxcp-williampeixinhos-projects.vercel.app/'">Entrar</button>
+                          </div>
+                          <footer class="card-footer">
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
+                          </footer>
+                        </article>
+                      </div>
+                      
+                      <div class="col-lg-4 col-md-6 col-xs-12 mt-4" data-aos="fade-left">
+                        <article class="card text-bg-dark">
+                          <header class="card-header">
+                            Back-end
+                          </header>
+                          <img src="./imagens/_0926e5ea-4cd6-4f7d-8e23-496e1eb291ad.jpeg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Habilidade</h4>
+                            <p class="card-text">Em breve haverá um projeto relacionado</p>
+                            <button id="botao-sacudir" class="button-2">Bloqueado</button>
+                          </div>
+                          <footer class="card-footer">
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
+                          </footer>
+                        </article>
+                      </div>
+                   
+                      <div class="col-lg-4 col-md-6 col-xs-12 mt-4" data-aos="fade-down">
+                        <article class="card text-bg-dark backcard">
+                          <header class="card-header">
+                            Javascript
+                          </header>
+                          <img src="./imagens/cerebro.jpeg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Jogo da memória</h4>
+                            <p class="card-text">Conheça um pouco do meu projeto</p>
+                            <button type="button" class="button" onclick="window.location.href='https://memory-khaki-five.vercel.app/'">Entrar</button>
+                          </div>
+                          <footer class="card-footer">
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
+                          </footer>
+                          
+                        </article>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-xs-12 mt-4" data-aos="fade-right">
+                        <article class="card text-bg-dark">
+                          <header class="card-header">
+                            Front-end
+                          </header>
+                          <img src="./imagens/calculadora de medias.jpeg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Calculadora</h4>
+                            <p class="card-text">Calcule suas médias</p>
+                            <button type="button" class="button" onclick="window.location.href='https://peixe-projeto-calculadora-medias-7kycmxxp7.vercel.app/'">Entrar</button>
+                          </div>
+                          <footer class="card-footer">
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
+                          </footer>
+                        </article>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-xs-12 mt-4" data-aos="fade-up">
+                        <article class="card text-bg-dark ">
+                          <header class="card-header">
+                            Front-end
+                          </header>
+                          <img src="./imagens/Lista de tarefa.jpeg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Lista de Tarefa</h4>
+                            <p class="card-text">Não esqueça suas tarefas</p>
+                            <button type="button" class="button" onclick="window.location.href='https://lista-de-tarefa-jquery.vercel.app/'">Entrar</button>
+                          </div>
+                          <footer class="card-footer">
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
+                          </footer>
+                        </article>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-xs-12 mt-4" data-aos="fade-down">
+                        <article class="card text-bg-dark ">
+                          <header class="card-header">
+                            Desenvolvimento Web
+                          </header>
+                          <img src="./imagens/telefone.jpeg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Agenda</h4>
+                            <p class="card-text">pra mandar um zap!</p>
+                            <button type="button" class="button" onclick="window.location.href='https://agenda-theta-plum.vercel.app/">Entrar</button>
+                          </div>
+                          <footer class="card-footer">
+                            Postado em <time datetime="">09/09/24 as 19:00</time>
+                          </footer>
+                        </article>
+                      </div>
+        
+                    </div>
+                  </div>
+                  <h2 class="t-projetos">#####Skills#####</h2>
+                  <div id="skills">
+                    <h2 id="nome-char">William Peixinho 
+                      "juninho DEV"</h2> 
+                  <img src="./imagens/WIILLIAM PEIXINHO (full body).png" id="char" alt="" data-aos="fade-left">
+                  
+                  <img src="./imagens/hud.png" id="hud" alt="" data-aos="fade-right">
+                </div>
+                <h2 class="t-projetos">#####Sobre#####</h2>
+                <div class="container sobre" data-aos="fade-left">
+                  <div class="row flex-row">
+                    <div class="col-md-6">
+                      <img id="eu" src="./imagens/fusca.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 texto" id="texto">
+                      Olá! Sou William Peixinho, um apaixonado por tecnologia e criatividade, atualmente em transição da área financeira para o mundo da programação. Estou concluindo o curso de Full Stack Python na EBAC, com foco atual no desenvolvimento front-end, e tenho um sólido conhecimento em HTML, CSS, JavaScript, jQuery e Bootstrap, além de experiência com GitHub.
+
+Minha trajetória começou na fotografia, onde desenvolvi uma sensibilidade estética e uma abordagem detalhista que agora aplico no design e desenvolvimento web. Essa experiência como fotógrafo me proporcionou uma visão única sobre a importância do design visual e da usabilidade, que são fundamentais para criar experiências de usuário envolventes e funcionais.
+
+Sou uma pessoa criativa e dedicada, sempre em busca de novas maneiras de elaborar e criar soluções inovadoras. Meu objetivo é unir minha experiência em design com minhas habilidades em programação para desenvolver projetos impactantes e de alta qualidade. No futuro, pretendo integrar minha experiência anterior na área financeira com meu conhecimento em tecnologia, explorando como essas duas áreas podem se complementar e criar oportunidades únicas.
+
+Estou entusiasmado com as possibilidades que o campo da tecnologia oferece e estou ansioso para contribuir com minha paixão, criatividade e habilidades para projetos desafiadores.
+                    </div>
+                  </div>
+                  <div id="icon">
+                    <a href="https://www.linkedin.com/in/william-da-silva-peixinho-5b2579188/">
+                      <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                    </a>
+                    <a href="https://github.com/williampeixinho">
+                      <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                    </a>
+                    <a href="https://open.spotify.com/user/222vuevjy5dp6lpgovfvjdrmi">
+                      <i class="fa-brands fa-spotify" style="color: #ffffff;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/william_peixinho/">
+                      <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    </a>
+                  </div>
+
+                  <h2 class="t-projetos">#####Contato#####</h2>
+                  <form>
+                    <div class="form-group">
+                      <label for="nome">Nome:</label>
+                      <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">E-mail:</label>
+                      <input type="email" class="form-control" id="email" placeholder="seuemail@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="mensagem">Mensagem:</label>
+                      <textarea class="form-control" id="mensagem" placeholder="Sua mensagem" style="resize: none"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+ </div>
+
+
+</body>
+<script src="https://kit.fontawesome.com/8b4c763476.js" crossorigin="anonymous"></script>
+<script src="./Lib (codes)/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    const botaoSacudir = document.getElementById('botao-sacudir');
+const card = botaoSacudir.closest('.card');
+
+botaoSacudir.addEventListener('click', () => {
+  card.classList.add('shake');
+  setTimeout(() => {
+    card.classList.remove('shake');
+  }, 1000); // remove a classe após 1 segundo
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var header = document.querySelector('.cabecalho');
+  header.classList.add('active');
+});
+</script>
+<script>
+  AOS.init();
+</script>
+
+</html>
