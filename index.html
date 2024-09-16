@@ -14,6 +14,7 @@
         * {
           margin: 0;
           padding: 0;
+          max-width: 100vw;
           }
 
         body {
@@ -21,6 +22,7 @@
             font-weight: 400;
             font-style: normal;
             background-image: url(./WIILLIAM\ PEIXINHO\ \(8\).png);
+            
             overflow-x: hidden;
         }
 
@@ -32,15 +34,18 @@
             color: white;
             padding: 20px;
             margin: 0 auto;
-            width: 100%;
+            width: 100vw;
             position: fixed;
             z-index: 1;
             top: 0px;
-            padding: 1em;
+            padding: 1.1em;
+            
         }
 
+
         .carousel-inner {
-            margin-top: 120px;
+            margin-top: 100px;
+            
         }
 
        
@@ -116,7 +121,7 @@
             } 
     .container-projetos {
         border-radius: 960px;
-        margin-top: 30px;
+        margin-top: 0px;
         width: 300%;
     }
 
@@ -125,7 +130,7 @@
     }
 
     .t-projetos {
-        margin-top: 40px;
+        margin-top: 10px;
         background-color: #2e2e2ed2;
         color:white;
         border-radius: 5px;
@@ -135,7 +140,7 @@
     }
 
     .projetos {
-        margin-top: 40px;
+        
     }
          button {
                     margin-top: 10px;
@@ -220,7 +225,7 @@
  background-color: rgba(0, 0, 0, 0.158);
   text-align: center;
   filter: brightness(1);
-  margin-bottom: -30px;
+  margin-bottom: 5px;
   
   }
 
@@ -336,25 +341,51 @@ label {
 
 @media only screen and (max-width: 768px) {
     #hud {
-    max-width: 400px;
+    max-width: 80vw;
   
 }
+
+#nome-char {
+      font-size: 20px;
+      padding: 15px;
+}
+
     #texto {
       font-size: 15px;
       margin-top: 20px;
     }
 
     .imagem-carrosel{
-        max-width: 90%
+        max-width: 90%;
+        height: 500px;
+        border-radius: 0px;
       }
 
       .imagem-carrosel-2{
         max-width: 90%;
+        height: 500px;
+        border-radius: 0px;
       }
 
       .imagem-carrosel-3{
         max-width: 90%;
+        height: 500px;
+        border-radius: 0px;
       }
+
+      #titulo-img {
+        font-size: 15px
+      }
+
+      .container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 }
 
 
@@ -366,7 +397,7 @@ label {
         
         <div class="navbar navbar-expand-lg">
                 <div>
-                <h1 id="inicio">W I L L I A M P E I X I N H O <br> H T M l : 5 | C S S | J S </h1>
+                <h1 >W I L L I A M P E I X I N H O <br> H T M l : 5 | C S S | J S </h1>
                 
                 </div>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -375,7 +406,7 @@ label {
             <nav class="collapse navbar-collapse justify-content-end" id="menu">
                 <ul class="nav navbar-nav nav nav-pills">
                     <li class="nav-item mx-2 font-size-lg ">
-                        <a class="nav-link text-white" href="#inicio">Inicio</a>
+                        <a class="nav-link text-white" href="#carousel-exemplo">Inicio</a>
                     </li>
                     <li class="nav-item mx-2 font-size-lg">
                         <a class="nav-link text-white" href="#projeto">Projetos</a>
@@ -410,7 +441,7 @@ label {
                 <div class="carousel-item">
                     <img class="imagem-carrosel" src="./imagens/_226b6309-bd8c-450e-8c0f-8018eabe909d.jpeg" alt="">
                     <div class="carousel-caption">
-                        <h2 id="titulo-img">Projetos com MicroComputadores Open source <br>  (em breve) </h2>
+                        <h2 id="titulo-img">Projetos Open source <br>  (em breve) </h2>
                     </div>
                 </div>
             </div>
@@ -438,7 +469,7 @@ label {
                           <div class="card-body" >
                             <h4 class="card-title">W.Peixinho Store</h4>
                             <p class="card-text">Conheça um pouco do meu projeto</p>
-                            <button type="button" class="button" onclick="window.location.href='william-peixinho-store.vercel.app'">Entrar</button>
+                            <button type="button" class="button" onclick="window.location.href='https://william-peixinho-store.vercel.app/'">Entrar</button>
                           </div>
                           <footer class="card-footer">
                             Postado em <time datetime="">09/09/24 as 19:00</time>
@@ -490,7 +521,7 @@ label {
                           <div class="card-body">
                             <h4 class="card-title">Calculadora</h4>
                             <p class="card-text">Calcule suas médias</p>
-                            <button type="button" class="button" onclick="window.location.href='peixe-projeto-calculadora-medias.vercel.app'">Entrar</button>
+                            <button type="button" class="button" onclick="window.location.href='https://peixe-projeto-calculadora-medias.vercel.app/'">Entrar</button>
                           </div>
                           <footer class="card-footer">
                             Postado em <time datetime="">09/09/24 as 19:00</time>
@@ -524,7 +555,7 @@ label {
                           <div class="card-body">
                             <h4 class="card-title">Agenda</h4>
                             <p class="card-text">pra mandar um zap!</p>
-                            <button type="button" class="button" onclick="window.location.href='https://agenda-theta-plum.vercel.app/">Entrar</button>
+                            <button type="button" class="button" onclick="window.location.href='https://agenda-theta-plum.vercel.app/'">Entrar</button>
                           </div>
                           <footer class="card-footer">
                             Postado em <time datetime="">09/09/24 as 19:00</time>
